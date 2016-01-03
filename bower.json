@@ -1,0 +1,31 @@
+{
+  "name": "angular-metro",
+  "description": "AngularJS directives for MetroUI CSS",
+  "main": "index.js",
+  "authors": [
+    "Thibaut DISEUR"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "MetroUI",
+    "CSS"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "metro": "metro-ui-css#~3.0.13",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  },
+  "devDependencies": {
+    "google-code-prettify": "~1.0.4"
+  }
+}

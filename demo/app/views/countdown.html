@@ -1,0 +1,34 @@
+<h3>Simple declarative countdown</h3>
+<div class="example" data-text="example">
+	<h5>Basic</h5>
+	<metro-countdown days="1" hours="10" minutes="30" seconds="60"></metro-countdown>
+	<br />
+	
+	<h5>Styling</h5>
+	<metro-countdown days="1" hours="10" minutes="30" seconds="60" label-color="fg-red" background-color="bg-green"></metro-countdown>
+	<br />
+	
+    <h5>Callbacks</h5>
+	<span ng-show="vm.isEnded">Countdown elpased</span>
+	<span ng-hide="vm.isEnded">{{ vm.seconds }} seconds remaings</span>
+	<br />
+	<metro-countdown seconds="30" background-color="bg-red" on-tick="vm.refresh(days, hours, minutes, seconds)" on-stop="vm.ended()" ></metro-countdown>
+	<br /> 
+
+</div>
+<div class="example" data-text="code">
+	<h5>Basic</h5>
+	<pre class="prettyprint"><code class="language-html">
+        &lt;metro-countdown days="1" hours="10" minutes="30" seconds="60"&gt;&lt;/metro-countdown&gt;
+    </code></pre>
+
+	<h5>Styling</h5>
+	<pre class="prettyprint"><code class="language-html">
+        &lt;metro-countdown label-color="fg-red" background-color="bg-green"&gt;&lt;/metro-countdown&gt;
+    </code></pre>
+
+    <h5>Callbacks</h5>
+    <pre class="prettyprint"><code class="language-html">
+    &lt;metro-countdown on-tick="vm.refresh(days, hours, minutes, seconds)" on-stop="vm.ended()"&gt;&lt;/metro-countdown&gt;
+    </code></pre>
+</div>
